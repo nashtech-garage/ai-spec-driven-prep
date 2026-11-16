@@ -4,7 +4,15 @@ Optional reading. Check each page for the latest information, because products a
 
 ## AI fundamentals
 
+- [3Blue1Brown: neural networks video series](https://www.3blue1brown.com/topics/neural-networks): visual explanations of how neural networks learn.
+- [Andrej Karpathy: Intro to Large Language Models (video)](https://www.youtube.com/watch?v=zjkBMFhNj_g): a one-hour overview of how LLMs are trained and used.
 - [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course): an introduction to machine learning concepts.
+
+## AI tools and plans
+
+- [GitHub Copilot plans](https://github.com/features/copilot/plans): compare Free, Student and Pro.
+- [Plans for GitHub Copilot (documentation)](https://docs.github.com/en/copilot/get-started/plans): limits and feature details.
+- [Google AI subscriptions](https://gemini.google/subscriptions): Google AI Plus and other plans, with availability by country.
 
 ## GitHub Copilot
 

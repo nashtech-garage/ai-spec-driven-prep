@@ -1,6 +1,6 @@
 # AI & Spec-Driven Development: Workshop Preparation
 
-A VitePress guide that helps students prepare for the AI-Driven Mobile App Development workshop. The content is in English and covers AI basics, safe use of AI tools, and the spec-driven workflow.
+A VitePress guide that helps students prepare for the AI-Driven Mobile App Development workshop. The guide is available in **English** (root) and **Tiếng Việt** (`/vi/`). It covers AI concepts, safe use of AI tools, the spec-driven workflow, and the software needed before the session.
 
 ## Local development
 
@@ -24,20 +24,24 @@ One-time repository setup:
 
 ```text
 docs/
-  index.md                       Landing page
-  01-ai-basics.md                AI, LLMs and generative AI
-  02-prompts-and-context.md      Prompts, tokens and context
-  03-verify-ai-output.md         Verifying AI output
-  04-assistants-vs-agents.md     Chat assistants vs coding agents
-  05-spec-driven-development.md  Specifying before coding
-  06-setup-checklist.md          Setup before the workshop
-  07-self-check-and-exercise.md  Self-check and warm-up exercise
-  glossary.md                    Glossary
-  resources.md                   Optional reading
-  .vitepress/config.mts          Site configuration and sidebar
+  index.md                          Landing page (English)
+  01-what-is-ai.md                  What AI is, machine learning, neural networks
+  02-how-llms-work.md               How LLMs predict text, training and inference
+  03-prompts-tokens-context.md      Prompts, tokens and context windows
+  04-verify-ai-output.md            Verifying AI output
+  05-assistants-vs-agents.md        Chat assistants vs coding agents
+  06-spec-driven-development.md     Specifying before coding
+  07-setup-checklist.md             Required software, AI accounts, mobile tech stacks
+  08-self-check-and-exercise.md     Self-check and warm-up exercise
+  glossary.md                       Glossary
+  resources.md                      Optional reading
+  vi/                               Vietnamese version, same filenames as above
+  .vitepress/config.mts             Site configuration, locales, navigation and sidebars
 ```
 
 ## Updating content
 
-- Add a page under `docs/`, then add it to the sidebar in `docs/.vitepress/config.mts`.
+- Add a page under `docs/`, then add it to the sidebar in `docs/.vitepress/config.mts` for **both** locales.
+- Keep the Vietnamese pages in `docs/vi/` in sync with the English pages. Use the same filename, and link internal pages with `/vi/...`.
 - Tool names, commands and product features change. Recheck the setup and tool details before each workshop.
+
