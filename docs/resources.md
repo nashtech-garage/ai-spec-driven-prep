@@ -14,6 +14,7 @@ Optional reading. Check each page for the latest information, because products a
 - [Plans for GitHub Copilot (documentation)](https://docs.github.com/en/copilot/get-started/plans): limits and feature details.
 - [Google AI subscriptions](https://gemini.google/subscriptions): Google AI Plus and other plans, with availability by country.
 - [Google AI Studio pricing](https://aistudio.google.com/docs/pricing): free tier and paid rates for the Gemini API.
+- [Use your own language model key in VS Code](https://code.visualstudio.com/blogs/2026/06/18/byok-vscode): how to add Gemini and other models with an API key.
 
 ## GitHub Copilot
 

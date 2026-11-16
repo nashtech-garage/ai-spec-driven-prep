@@ -14,6 +14,7 @@
 - [Plans for GitHub Copilot](https://docs.github.com/en/copilot/get-started/plans): limits và feature.
 - [Google AI subscriptions](https://gemini.google/subscriptions): Google AI Plus và các plans.
 - [Google AI Studio pricing](https://aistudio.google.com/docs/pricing): giá gói Free và gói trả phí của Gemini API.
+- [Dùng language model với API key riêng trong VS Code](https://code.visualstudio.com/blogs/2026/06/18/byok-vscode): cách thêm model Gemini và model khác bằng API key.
 
 ## GitHub Copilot
 
