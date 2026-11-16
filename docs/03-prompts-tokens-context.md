@@ -12,6 +12,18 @@ Your prompt and the context around it decide most of what the model can do for y
 
 The model only works with the context it receives. It does not automatically know every file on your computer.
 
+```mermaid
+flowchart LR
+    subgraph CW["Context window: limited number of tokens"]
+        S["Tool instructions"]
+        H["Earlier messages"]
+        F["Files or snippets the tool sends"]
+        P["Your current prompt"]
+    end
+    CW --> M["Model"] --> R["Answer"]
+    X["Files the tool did not send"] -.->|"not visible to the model"| M
+```
+
 ## Compare two prompts
 
 > **Vague:** "Write a task management app."

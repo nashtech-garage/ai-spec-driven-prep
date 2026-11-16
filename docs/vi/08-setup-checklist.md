@@ -1,4 +1,4 @@
-# 7. Danh sách chuẩn bị
+# 8. Danh sách chuẩn bị
 
 **Thời gian ước tính:** 30 đến 90 phút, tùy máy tính, mạng và tech stack bạn chọn.
 
@@ -49,6 +49,15 @@ Bạn được tự do chọn tech stack cho ứng dụng di động. Demo của
 | **iOS native** | Swift | Xây dựng ứng dụng chỉ cho thiết bị Apple với đầy đủ quyền truy cập nền tảng | Xcode (chỉ macOS) |
 | **Các stack khác** (ví dụ Kotlin Multiplatform hoặc .NET MAUI) | Tùy loại | Tùy framework | Làm theo hướng dẫn cài đặt của framework đó |
 
+```mermaid
+flowchart TD
+    Q1{"Bạn đã biết mobile stack nào chưa?"} -->|"Rồi"| USE["Dùng stack đó"]
+    Q1 -->|"Chưa"| Q2{"Muốn một code base cho cả iOS và Android?"}
+    Q2 -->|"Có, với JavaScript hoặc TypeScript"| EXPO["Expo (React Native), stack của demo"]
+    Q2 -->|"Có, với Dart"| FL["Flutter"]
+    Q2 -->|"Không, chỉ một nền tảng"| NAT["Native: Kotlin cho Android hoặc Swift cho iOS"]
+```
+
 Lưu ý quan trọng:
 
 - **Node.js** chỉ cần khi stack của bạn dùng công cụ JavaScript hoặc TypeScript. Đừng cài nó chỉ vì workshop nếu bạn chọn Flutter hoặc phát triển native.
@@ -91,8 +100,8 @@ Trong VS Code, hãy xác nhận rằng:
 - [ ] Chọn tài khoản AI (GitHub Copilot hoặc Google AI Plus) và xác nhận bạn đăng nhập được.
 - [ ] Cài Git và VS Code, rồi đăng nhập GitHub Copilot.
 - [ ] Cài công cụ cho tech stack bạn đã chọn.
-- [ ] Đọc mục 1 đến 6 của tài liệu này.
-- [ ] Làm [bài tự kiểm tra](/vi/08-self-check-and-exercise).
+- [ ] Đọc mục 1 đến 7 của tài liệu này (mục 6 là tùy chọn).
+- [ ] Làm [bài tự kiểm tra](/vi/09-self-check-and-exercise).
 - [ ] Hỏi ban tổ chức về project demo, hoặc xác nhận bạn biết cách lấy nó.
 - [ ] Sao lưu hoặc dùng Git trước khi thử nghiệm bất kỳ project nào.
 - [ ] Đóng các ứng dụng và thông báo không liên quan để dễ theo dõi demo hơn.

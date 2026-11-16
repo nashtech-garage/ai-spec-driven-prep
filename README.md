@@ -30,9 +30,10 @@ docs/
   03-prompts-tokens-context.md      Prompts, tokens and context windows
   04-verify-ai-output.md            Verifying AI output
   05-assistants-vs-agents.md        Chat assistants vs coding agents
-  06-spec-driven-development.md     Specifying before coding
-  07-setup-checklist.md             Required software, AI accounts, mobile tech stacks
-  08-self-check-and-exercise.md     Self-check and warm-up exercise
+  06-ai-building-blocks.md          RAG, tools, MCP, agents, evals, guardrails, hot terms
+  07-spec-driven-development.md     Specifying before coding
+  08-setup-checklist.md             Required software, AI accounts, mobile tech stacks
+  09-self-check-and-exercise.md     Self-check and warm-up exercise
   glossary.md                       Glossary
   resources.md                      Optional reading
   vi/                               Vietnamese version, same filenames as above

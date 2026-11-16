@@ -11,7 +11,7 @@ hero:
       link: /vi/01-what-is-ai
     - theme: alt
       text: Danh sách chuẩn bị
-      link: /vi/07-setup-checklist
+      link: /vi/08-setup-checklist
     - theme: alt
       text: English
       link: /
@@ -28,7 +28,7 @@ features:
     link: /vi/04-verify-ai-output
   - title: 4. Đặc tả trước khi xây dựng
     details: Viết user outcome, acceptance criteria và non-goal trước khi thay đổi bất kỳ dòng code nào.
-    link: /vi/06-spec-driven-development
+    link: /vi/07-spec-driven-development
 ---
 
 ## Dành cho ai
@@ -40,16 +40,16 @@ Bạn có thể đọc tài liệu này bằng **Tiếng Việt** (trang này) h
 ## Sau khi đọc xong, bạn sẽ có thể
 
 - Giải thích ở mức cơ bản cách một LLM dự đoán văn bản, và vì sao kết quả của nó có thể sai.
-- Phân biệt trợ lý chat với coding agent.
+- Phân biệt trợ lý chat với coding agent, và nêu được các khối xây dựng (RAG, tool, MCP, eval) mà bạn sẽ nghe nhắc tới.
 - Nhận ra khi một yêu cầu tính năng còn thiếu thông tin, và viết một acceptance example đơn giản.
 - Chọn tech stack cho ứng dụng di động, và biết stack đó cần phần mềm nào và vì sao.
 - Theo dõi buổi demo dùng GitHub Copilot và GitHub Spec Kit, ngay cả khi bạn không nhớ hết mọi lệnh.
 
 ## Cách sử dụng tài liệu
 
-1. Đọc theo thứ tự từ mục 1 đến mục 6. Khoảng 30 phút.
-2. Làm bài khởi động và trả lời câu hỏi tự kiểm tra ở mục 8.
-3. Làm theo [danh sách chuẩn bị](/vi/07-setup-checklist) để cài phần mềm cần thiết, chọn tài khoản AI và tech stack cho ứng dụng di động.
+1. Đọc theo thứ tự từ mục 1 đến mục 7. Khoảng 45 phút; mục 6 là phần đào sâu tùy chọn.
+2. Làm bài khởi động và trả lời câu hỏi tự kiểm tra ở mục 9.
+3. Làm theo [danh sách chuẩn bị](/vi/08-setup-checklist) để cài phần mềm cần thiết, chọn tài khoản AI và tech stack cho ứng dụng di động.
 4. Mang theo một câu hỏi, hoặc một ví dụ mà câu trả lời của AI sai hoặc chưa rõ.
 
 ::: tip Không cần tài khoản AI để đọc

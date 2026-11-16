@@ -12,6 +12,20 @@ AI có thể trả lời tự tin nhưng sai: bịa library, dùng API không t�
 4. **Test edge cases.** Input rỗng/dài, thiếu data, duplicate và failure.
 5. **Bảo vệ data nhạy cảm.** Không dán password, API key, token, personal data hoặc private source code nếu chưa được phép.
 
+## Vòng lặp kiểm chứng
+
+```mermaid
+flowchart LR
+    G["AI tạo một thay đổi"] --> R["Đọc và giải thích thay đổi"]
+    R --> D["Đối chiếu tên và API với docs"]
+    D --> RUN["Chạy program"]
+    RUN --> T["Test edge cases"]
+    T --> OK{"Đúng yêu cầu?"}
+    OK -->|"Chưa"| F["Sửa, hoặc yêu cầu thay đổi nhỏ hơn"]
+    F --> G
+    OK -->|"Đúng"| DONE["Chấp nhận và commit bằng Git"]
+```
+
 ## Tests là bằng chứng, không phải proof
 
 Test pass chỉ cho thấy behavior đã test pass, không chứng minh toàn program đúng. Nêu rõ điều chưa test.

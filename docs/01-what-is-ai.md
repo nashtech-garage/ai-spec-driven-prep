@@ -21,6 +21,17 @@ Artificial Intelligence
 
 Each inner circle is a more specific way of building AI.
 
+```mermaid
+flowchart TB
+    subgraph AI["Artificial Intelligence: any software that performs human-like tasks"]
+        subgraph ML["Machine Learning: learns patterns from data"]
+            subgraph DL["Deep Learning: neural networks with many layers"]
+                LLM["Large Language Models: generate text and code"]
+            end
+        end
+    end
+```
+
 ## Layer 1: Rule-based AI
 
 The programmer writes every rule by hand:

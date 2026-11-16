@@ -1,4 +1,4 @@
-import { defineConfig } from "vitepress";
+import { withMermaid } from "vitepress-plugin-mermaid";
 
 // GitHub Pages serves project sites from /<repo-name>/. The deploy workflow sets DOCS_BASE_PATH.
 const base = process.env.DOCS_BASE_PATH ?? "/ai-spec-driven-prep/";
@@ -9,7 +9,7 @@ const enSidebar = [
     text: "Start here",
     items: [
       { text: "Welcome", link: "/" },
-      { text: "Setup checklist", link: "/07-setup-checklist" },
+      { text: "Setup checklist", link: "/08-setup-checklist" },
     ],
   },
   {
@@ -20,16 +20,17 @@ const enSidebar = [
       { text: "3. Prompts, tokens and context", link: "/03-prompts-tokens-context" },
       { text: "4. Verifying AI output", link: "/04-verify-ai-output" },
       { text: "5. Assistants vs coding agents", link: "/05-assistants-vs-agents" },
+      { text: "6. AI building blocks", link: "/06-ai-building-blocks" },
     ],
   },
   {
     text: "Spec-driven development",
-    items: [{ text: "6. Specifying before coding", link: "/06-spec-driven-development" }],
+    items: [{ text: "7. Specifying before coding", link: "/07-spec-driven-development" }],
   },
   {
     text: "Practice",
     items: [
-      { text: "8. Self-check and warm-up exercise", link: "/08-self-check-and-exercise" },
+      { text: "9. Self-check and warm-up exercise", link: "/09-self-check-and-exercise" },
       { text: "Glossary", link: "/glossary" },
       { text: "Resources", link: "/resources" },
     ],
@@ -41,7 +42,7 @@ const viSidebar = [
     text: "Bắt đầu",
     items: [
       { text: "Chào mừng", link: "/vi/" },
-      { text: "Danh sách chuẩn bị", link: "/vi/07-setup-checklist" },
+      { text: "Danh sách chuẩn bị", link: "/vi/08-setup-checklist" },
     ],
   },
   {
@@ -52,23 +53,24 @@ const viSidebar = [
       { text: "3. Prompt, token và context", link: "/vi/03-prompts-tokens-context" },
       { text: "4. Kiểm chứng kết quả của AI", link: "/vi/04-verify-ai-output" },
       { text: "5. Trợ lý và coding agent", link: "/vi/05-assistants-vs-agents" },
+      { text: "6. Các khối xây dựng AI", link: "/vi/06-ai-building-blocks" },
     ],
   },
   {
     text: "Spec-driven development",
-    items: [{ text: "6. Viết spec trước khi code", link: "/vi/06-spec-driven-development" }],
+    items: [{ text: "7. Viết spec trước khi code", link: "/vi/07-spec-driven-development" }],
   },
   {
     text: "Thực hành",
     items: [
-      { text: "8. Tự kiểm tra và bài khởi động", link: "/vi/08-self-check-and-exercise" },
+      { text: "9. Tự kiểm tra và bài khởi động", link: "/vi/09-self-check-and-exercise" },
       { text: "Thuật ngữ", link: "/vi/glossary" },
       { text: "Tài liệu tham khảo", link: "/vi/resources" },
     ],
   },
 ];
 
-export default defineConfig({
+export default withMermaid({
   base,
   cleanUrls: true,
   lastUpdated: true,
@@ -82,8 +84,8 @@ export default defineConfig({
         nav: [
           { text: "Start", link: "/" },
           { text: "Core concepts", link: "/01-what-is-ai" },
-          { text: "Spec-driven", link: "/06-spec-driven-development" },
-          { text: "Setup", link: "/07-setup-checklist" },
+          { text: "Spec-driven", link: "/07-spec-driven-development" },
+          { text: "Setup", link: "/08-setup-checklist" },
           { text: "Glossary", link: "/glossary" },
         ],
         sidebar: enSidebar,
@@ -100,8 +102,8 @@ export default defineConfig({
         nav: [
           { text: "Bắt đầu", link: "/vi/" },
           { text: "Kiến thức nền", link: "/vi/01-what-is-ai" },
-          { text: "Spec-driven", link: "/vi/06-spec-driven-development" },
-          { text: "Chuẩn bị", link: "/vi/07-setup-checklist" },
+          { text: "Spec-driven", link: "/vi/07-spec-driven-development" },
+          { text: "Chuẩn bị", link: "/vi/08-setup-checklist" },
           { text: "Thuật ngữ", link: "/vi/glossary" },
         ],
         sidebar: viSidebar,

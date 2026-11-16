@@ -11,7 +11,7 @@ hero:
       link: /01-what-is-ai
     - theme: alt
       text: Setup checklist
-      link: /07-setup-checklist
+      link: /08-setup-checklist
     - theme: alt
       text: Tiếng Việt
       link: /vi/
@@ -28,7 +28,7 @@ features:
     link: /04-verify-ai-output
   - title: 4. Specify before you build
     details: Write user outcomes, acceptance criteria and non-goals before any code changes.
-    link: /06-spec-driven-development
+    link: /07-spec-driven-development
 ---
 
 ## Who this guide is for
@@ -42,16 +42,16 @@ You can read this guide in **English** (this site) or in **Tiếng Việt** (use
 After reading the guide you should be able to:
 
 - Explain at a basic level how an LLM predicts text, and why its output can be wrong.
-- Tell the difference between a chat assistant and a coding agent.
+- Tell the difference between a chat assistant and a coding agent, and name the building blocks (RAG, tools, MCP, evals) you will hear about.
 - Notice when a feature request is missing information, and write a simple acceptance example.
 - Choose a mobile tech stack, and know which software that stack needs and why.
 - Follow a demo that uses GitHub Copilot and GitHub Spec Kit, even if you do not remember every command.
 
 ## How to use this guide
 
-1. Read sections 1 to 6 in order. They take about 30 minutes.
-2. Try the warm-up exercise and answer the self-check questions in section 8.
-3. Follow the [setup checklist](/07-setup-checklist) to install the required software and choose an AI account and mobile stack.
+1. Read sections 1 to 7 in order. They take about 45 minutes; section 6 is optional depth.
+2. Try the warm-up exercise and answer the self-check questions in section 9.
+3. Follow the [setup checklist](/08-setup-checklist) to install the required software and choose an AI account and mobile stack.
 4. Bring one question, or one example where an AI answer was wrong or unclear.
 
 

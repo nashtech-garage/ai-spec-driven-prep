@@ -33,6 +33,16 @@ The following example is simplified and the numbers are invented for illustratio
 
 The model does not look up a fixed answer. It chooses from likely continuations, and the choice can vary between runs. This is one reason the same question can produce different wording.
 
+```mermaid
+flowchart LR
+    A["Your input text"] --> B["Model estimates probabilities for the next token"]
+    B --> C["Pick one token"]
+    C --> D{"Answer complete?"}
+    D -->|"No"| E["Add the token to the text"]
+    E --> B
+    D -->|"Yes"| F["Final answer"]
+```
+
 ## Tokens: the units the model reads
 
 The model does not read whole words or letters in the same way you do. It reads **tokens**, which are chunks of text. A token can be a whole common word, part of a longer word, punctuation or a space.
@@ -50,6 +60,12 @@ Training happens before you use a model. It usually has stages:
 1. **Pre-training.** The model reads a very large amount of text, such as books, articles, websites and source code. Each time, it tries to predict the next token and adjusts its parameters when it is wrong. Over billions of such adjustments, it learns grammar, common facts, writing styles and typical code patterns.
 2. **Fine-tuning and alignment.** The model is trained further on examples of helpful, well-structured answers, often with human feedback. This is why it can follow instructions such as "explain this in three bullet points" rather than only continuing the text.
 3. **Inference.** This is the stage you use. The model receives your input and generates output. In a normal chat, the model's trained parameters do not change because of your message. Some products offer memory or data-use settings, so check the privacy settings of the tool you use.
+
+```mermaid
+flowchart LR
+    P["Pre-training: predict the next token on huge amounts of text"] --> F["Fine-tuning and alignment: learn helpful, structured answers"]
+    F --> I["Inference: generate answers for your input"]
+```
 
 ## Why an LLM can write code
 

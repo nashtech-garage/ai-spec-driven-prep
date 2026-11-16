@@ -18,12 +18,15 @@ Good for: multi-step tasks in a real project, such as a feature that touches sev
 
 An agent repeats a loop until the goal is reached or it needs your input:
 
-```text
-Goal
-  -> Plan (what to do next)
-  -> Act (read a file, edit code, run a command)
-  -> Observe (read the result, such as an error message)
-  -> Repeat, or ask you for a decision
+```mermaid
+flowchart LR
+    GOAL["Goal"] --> PLAN["Plan: decide the next step"]
+    PLAN --> ACT["Act: read a file, edit code, run a command"]
+    ACT --> OBS["Observe: read the result, such as an error"]
+    OBS --> DEC{"Done, or need a decision?"}
+    DEC -->|"Continue"| PLAN
+    DEC -->|"Ask you"| YOU["You review and decide"]
+    YOU --> PLAN
 ```
 
 Each "act" step is a tool call. Permissions decide which tools the agent may use without asking. For example, reading files may be allowed while running a terminal command asks for approval.
@@ -52,4 +55,4 @@ Capabilities depend on the product, its settings and the permissions you grant. 
 
 The demo uses **GitHub Copilot** in VS Code, including Copilot Chat and agent mode, together with **GitHub Spec Kit**. Spec Kit adds a structured workflow of specifications, plans and tasks. The thinking behind the workflow is not tied to one tool.
 
-Next: [6. Spec-driven development](/06-spec-driven-development).
+Next: [6. AI building blocks](/06-ai-building-blocks).

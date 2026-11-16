@@ -1,4 +1,4 @@
-# 8. Tự kiểm tra và bài khởi động
+# 9. Tự kiểm tra và bài khởi động
 
 Hãy thử trước workshop. Không chấm điểm; mục tiêu là nhận ra điều đã hiểu và điều cần hỏi.
 

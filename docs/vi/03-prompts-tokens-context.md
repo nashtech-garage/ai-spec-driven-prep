@@ -12,6 +12,18 @@ Prompt và context quyết định phần lớn điều model làm được.
 
 Model chỉ làm việc với context nhận được, không tự biết mọi file trên máy.
 
+```mermaid
+flowchart LR
+    subgraph CW["Context window: số token có giới hạn"]
+        S["Instructions của tool"]
+        H["Tin nhắn trước đó"]
+        F["File hoặc snippet tool gửi"]
+        P["Prompt hiện tại của bạn"]
+    end
+    CW --> M["Model"] --> R["Câu trả lời"]
+    X["File tool không gửi"] -.->|"model không nhìn thấy"| M
+```
+
 ## So sánh hai prompt
 
 > **Mơ hồ:** “Write a task management app.”

@@ -1,4 +1,4 @@
-# 7. Setup Checklist
+# 8. Setup Checklist
 
 **Estimated time:** 30 to 90 minutes, depending on your machine, network and chosen stack.
 
@@ -49,6 +49,15 @@ You are free to choose the stack for your mobile app. The workshop demo uses one
 | **Native iOS** | Swift | Builds apps only for Apple devices with full platform access | Xcode (macOS only) |
 | **Other stacks** (for example Kotlin Multiplatform or .NET MAUI) | Depends | Depends on the framework | Follow that framework's setup guide |
 
+```mermaid
+flowchart TD
+    Q1{"Do you already know a mobile stack?"} -->|"Yes"| USE["Use that stack"]
+    Q1 -->|"No"| Q2{"Do you want one code base for iOS and Android?"}
+    Q2 -->|"Yes, with JavaScript or TypeScript"| EXPO["Expo (React Native), the workshop demo stack"]
+    Q2 -->|"Yes, with Dart"| FL["Flutter"]
+    Q2 -->|"No, one platform only"| NAT["Native: Kotlin for Android or Swift for iOS"]
+```
+
 Important notes:
 
 - **Node.js** is only needed if your stack uses JavaScript or TypeScript tooling. Do not install it just for the workshop if you choose Flutter or native development.
@@ -91,8 +100,8 @@ In VS Code, confirm that:
 - [ ] Choose an AI account (GitHub Copilot or Google AI Plus) and confirm you can sign in.
 - [ ] Install Git and VS Code, and sign in to GitHub Copilot.
 - [ ] Install the tools for your chosen stack.
-- [ ] Read sections 1 to 6 of this guide.
-- [ ] Complete the [self-check](/08-self-check-and-exercise).
+- [ ] Read sections 1 to 7 of this guide (section 6 is optional).
+- [ ] Complete the [self-check](/09-self-check-and-exercise).
 - [ ] Ask the organizers for the demo project, or confirm you know how to get it.
 - [ ] Make a backup, or use Git, before you experiment with any project.
 - [ ] Close unrelated apps and notifications so the demo is easier to follow.

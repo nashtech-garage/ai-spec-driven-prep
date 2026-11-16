@@ -12,12 +12,15 @@
 
 ## Agent hoạt động thế nào
 
-```text
-Goal
-  -> Plan (làm gì tiếp)
-  -> Act (đọc file, edit code, chạy command)
-  -> Observe (đọc kết quả, như error message)
-  -> Repeat hoặc hỏi bạn quyết định
+```mermaid
+flowchart LR
+    GOAL["Goal"] --> PLAN["Plan: quyết định bước tiếp theo"]
+    PLAN --> ACT["Act: đọc file, edit code, chạy command"]
+    ACT --> OBS["Observe: đọc kết quả, như error"]
+    OBS --> DEC{"Xong, hay cần quyết định?"}
+    DEC -->|"Tiếp tục"| PLAN
+    DEC -->|"Hỏi bạn"| YOU["Bạn review và quyết định"]
+    YOU --> PLAN
 ```
 
 Mỗi “act” là tool call. Permissions quyết định agent được làm gì không cần hỏi.
@@ -44,4 +47,4 @@ Khả năng phụ thuộc product, settings và permissions.
 
 Demo dùng **GitHub Copilot** trong VS Code, gồm Copilot Chat và agent mode, cùng **GitHub Spec Kit**. Spec Kit bổ sung workflow có specifications, plans và tasks.
 
-Tiếp theo: [6. Spec-driven development](/vi/06-spec-driven-development).
+Tiếp theo: [6. Các khối xây dựng AI](/vi/06-ai-building-blocks).

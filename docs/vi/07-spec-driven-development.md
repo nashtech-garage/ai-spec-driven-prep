@@ -1,4 +1,4 @@
-# 6. Spec-Driven Development (Phát triển dựa trên spec)
+# 7. Spec-Driven Development (Phát triển dựa trên spec)
 
 **Thời gian đọc dự kiến:** 7 phút
 
@@ -10,8 +10,16 @@ Không có spec, AI tự lấp gap bằng assumptions: chọn default sai, thêm
 
 ## Workflow dựa trên spec
 
-```text
-Principles -> Specify -> Clarify -> Plan -> Tasks -> Implement -> Verify
+```mermaid
+flowchart LR
+    P["Principles"] --> S["Specify"]
+    S --> C["Clarify"]
+    C --> PL["Plan"]
+    PL --> T["Tasks"]
+    T --> I["Implement"]
+    I --> V["Verify"]
+    V -->|"Phát hiện thiếu sót"| S
+    C -->|"Câu hỏi còn mở"| S
 ```
 
 | Bước | Câu hỏi | Output |
@@ -70,4 +78,4 @@ Demo dùng Expo và React Native nhưng phương pháp hợp mọi mobile stack.
 - Nêu non-goals để AI không bịa feature.
 - Review plan và tasks trước implementation.
 
-Tiếp theo: [7. Checklist chuẩn bị](/vi/07-setup-checklist).
+Tiếp theo: [8. Checklist chuẩn bị](/vi/08-setup-checklist).

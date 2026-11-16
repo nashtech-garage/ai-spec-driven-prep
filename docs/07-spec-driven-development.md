@@ -1,4 +1,4 @@
-# 6. Spec-Driven Development
+# 7. Spec-Driven Development
 
 **Estimated reading time:** 7 minutes
 
@@ -10,8 +10,16 @@ Without a spec, an AI tool fills the gaps with its own assumptions. It may choos
 
 ## The spec-driven workflow
 
-```text
-Principles -> Specify -> Clarify -> Plan -> Tasks -> Implement -> Verify
+```mermaid
+flowchart LR
+    P["Principles"] --> S["Specify"]
+    S --> C["Clarify"]
+    C --> PL["Plan"]
+    PL --> T["Tasks"]
+    T --> I["Implement"]
+    I --> V["Verify"]
+    V -->|"Gaps found"| S
+    C -->|"Open questions"| S
 ```
 
 | Step | Question it answers | Typical output |
@@ -74,4 +82,4 @@ The workshop demo uses Expo and React Native, but the method works with any mobi
 - Name non-goals so the AI does not invent extra features.
 - Review the plan and tasks before implementation starts.
 
-Next: [7. Setup checklist](/07-setup-checklist).
+Next: [8. Setup checklist](/08-setup-checklist).

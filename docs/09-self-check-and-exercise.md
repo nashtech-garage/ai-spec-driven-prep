@@ -1,4 +1,4 @@
-# 8. Self-Check and Warm-Up Exercise
+# 9. Self-Check and Warm-Up Exercise
 
 Try these before the workshop. There are no grades. The goal is to notice what you already understand and what to ask about.
 

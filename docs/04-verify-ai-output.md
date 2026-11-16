@@ -12,6 +12,20 @@ AI can give you a confident answer that is wrong. It may invent a library name, 
 4. **Test edge cases.** Empty input, very long input, missing data, duplicate values and failure cases.
 5. **Protect sensitive data.** Do not paste passwords, API keys, tokens, personal data or private source code into a tool unless your organization allows it. Read the tool's data policy.
 
+## Verification loop
+
+```mermaid
+flowchart LR
+    G["AI generates a change"] --> R["Read and explain the change"]
+    R --> D["Check names and APIs against docs"]
+    D --> RUN["Run the program"]
+    RUN --> T["Test edge cases"]
+    T --> OK{"Matches the requirements?"}
+    OK -->|"No"| F["Fix it, or ask for a smaller change"]
+    F --> G
+    OK -->|"Yes"| DONE["Accept, and commit with Git"]
+```
+
 ## Tests show evidence, not proof
 
 A passing test means that the behavior you tested passed. It does not prove the whole program is correct. Write tests for behavior that matters, and say what you did not test.

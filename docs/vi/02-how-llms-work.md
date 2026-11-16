@@ -24,6 +24,16 @@ Output: "Paris"   (phần tiếp nối có khả năng cao nhất)
 
 Model chọn trong các phần tiếp nối có khả năng, nên cùng câu hỏi có thể cho wording khác nhau.
 
+```mermaid
+flowchart LR
+    A["Text đầu vào"] --> B["Model ước tính xác suất cho token tiếp theo"]
+    B --> C["Chọn một token"]
+    C --> D{"Câu trả lời đã xong?"}
+    D -->|"Chưa"| E["Thêm token vào text"]
+    E --> B
+    D -->|"Rồi"| F["Câu trả lời cuối"]
+```
+
 ## Tokens: đơn vị model đọc
 
 Model đọc **tokens**, các mảnh text. Một token có thể là từ, phần của từ, dấu câu hoặc khoảng trắng.
@@ -39,6 +49,12 @@ Một token không luôn bằng một từ. Token ảnh hưởng cost và limits
 1. **Pre-training.** Model đọc lượng text lớn, dự đoán token tiếp theo và điều chỉnh parameters. Nó học grammar, facts, style và code patterns.
 2. **Fine-tuning và alignment.** Training thêm bằng câu trả lời hữu ích và human feedback để model làm theo instruction.
 3. **Inference.** Model nhận input và tạo output. Parameters không đổi vì tin nhắn thông thường; hãy kiểm tra privacy settings của product.
+
+```mermaid
+flowchart LR
+    P["Pre-training: dự đoán token tiếp theo trên lượng text lớn"] --> F["Fine-tuning và alignment: học câu trả lời hữu ích, có cấu trúc"]
+    F --> I["Inference: tạo câu trả lời cho input của bạn"]
+```
 
 ## Vì sao LLM viết được code
 

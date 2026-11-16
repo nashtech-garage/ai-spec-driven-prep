@@ -18,6 +18,18 @@
 
 - [GitHub Copilot documentation](https://docs.github.com/en/copilot): khả năng, cách dùng và limits.
 
+## AI engineering và các khối xây dựng
+
+- [roadmap.sh: AI Engineer roadmap](https://roadmap.sh/ai-engineer): bản đồ cộng đồng các chủ đề xây dựng sản phẩm AI, từ kiến thức LLM đến evals và agents.
+- [Model Context Protocol](https://modelcontextprotocol.io): giới thiệu chính thức, đặc tả và ví dụ về MCP.
+- [AGENTS.md](https://agents.md): định dạng đơn giản, mở để cung cấp hướng dẫn project cho coding agent.
+- [Anthropic: Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) (tiếng Anh): khi nào nên dùng workflow đơn giản và khi nào dùng agent.
+- [Prompt Engineering Guide](https://www.promptingguide.ai) (tiếng Anh): các mẫu prompt, RAG và agents, có ví dụ.
+- [Hamel Husain: Your AI product needs evals](https://hamel.dev/blog/posts/evals/) (tiếng Anh): vì sao và cách test tính năng AI có hệ thống.
+- [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) (tiếng Anh): các rủi ro bảo mật phổ biến, gồm prompt injection.
+- [Langfuse documentation](https://langfuse.com/docs) (tiếng Anh): ví dụ mã nguồn mở về tracing và giám sát ứng dụng LLM.
+- [walkinglabs: learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) (tiếng Anh): khóa học về xây môi trường quanh AI agent, là nguồn cảm hứng cho cấu trúc tài liệu này.
+
 ## Phát triển dựa trên spec
 
 - [GitHub Spec Kit](https://github.com/github/spec-kit): README và documentation.

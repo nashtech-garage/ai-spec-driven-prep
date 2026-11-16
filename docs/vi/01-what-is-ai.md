@@ -21,6 +21,17 @@ Artificial Intelligence
 
 Mỗi vòng tròn bên trong là cách xây dựng AI cụ thể hơn.
 
+```mermaid
+flowchart TB
+    subgraph AI["Artificial Intelligence: phần mềm làm các tác vụ giống con người"]
+        subgraph ML["Machine Learning: học mẫu từ data"]
+            subgraph DL["Deep Learning: neural network nhiều lớp"]
+                LLM["Large Language Models: tạo text và code"]
+            end
+        end
+    end
+```
+
 ## Lớp 1: AI dựa trên luật
 
 Lập trình viên viết mọi luật thủ công:
