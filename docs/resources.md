@@ -13,6 +13,7 @@ Optional reading. Check each page for the latest information, because products a
 - [GitHub Copilot plans](https://github.com/features/copilot/plans): compare Free, Student and Pro.
 - [Plans for GitHub Copilot (documentation)](https://docs.github.com/en/copilot/get-started/plans): limits and feature details.
 - [Google AI subscriptions](https://gemini.google/subscriptions): Google AI Plus and other plans, with availability by country.
+- [Google AI Studio pricing](https://aistudio.google.com/docs/pricing): free tier and paid rates for the Gemini API.
 
 ## GitHub Copilot
 

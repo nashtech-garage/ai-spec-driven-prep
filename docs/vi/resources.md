@@ -13,6 +13,7 @@
 - [GitHub Copilot plans](https://github.com/features/copilot/plans): so sánh Free, Student và Pro.
 - [Plans for GitHub Copilot](https://docs.github.com/en/copilot/get-started/plans): limits và feature.
 - [Google AI subscriptions](https://gemini.google/subscriptions): Google AI Plus và các plans.
+- [Google AI Studio pricing](https://aistudio.google.com/docs/pricing): giá gói Free và gói trả phí của Gemini API.
 
 ## GitHub Copilot
 

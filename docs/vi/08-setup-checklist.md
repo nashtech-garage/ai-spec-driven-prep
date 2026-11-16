@@ -12,8 +12,9 @@ Bạn cần một trong các lựa chọn sau để tham gia phần demo thực 
 | --- | --- | --- | --- |
 | **GitHub Copilot** (khuyến nghị) | Gói Student (miễn phí cho sinh viên đã xác minh) hoặc Pro. Cũng có gói Free. | **Có** với gói Student hoặc Pro. Copilot Chat và agent mode chạy trong VS Code. Gói Free có quyền agent hạn chế và chỉ tự chọn model, nên có thể không đủ cho toàn bộ demo. | Gói và giới hạn có thể thay đổi. Xem [các gói hiện tại](https://github.com/features/copilot/plans) và [so sánh gói](https://docs.github.com/en/copilot/get-started/plans). Gói Student không bao gồm agent của bên thứ ba. |
 | **Google AI Plus** | Gói trả phí; giá và khả năng sử dụng tùy theo quốc gia | **Không** với quy trình coding. Gói này gồm ứng dụng Gemini, chat và các ứng dụng Google. Google Antigravity, nền tảng phát triển agent của Google, chỉ được liệt kê cho AI Pro và AI Ultra, không có ở AI Plus. | Xem [trang đăng ký của Google](https://gemini.google/subscriptions) cho quốc gia của bạn. Bạn vẫn có thể dùng Gemini chat để học khái niệm. |
+| **Google AI Studio** (Gemini API) | Gói Free có giới hạn truy cập; một số model miễn phí. Gói trả phí tính theo mức dùng (pay-as-you-go). | **Không nằm trong demo.** AI Studio là ứng dụng web và API dùng API key. Nó không có agent mode của Copilot trong VS Code. Dùng Gemini trong VS Code cần công cụ bên thứ ba mà hướng dẫn này không đề cập. | Google có thể dùng nội dung của gói Free để cải thiện sản phẩm, nên đừng dán code riêng tư hoặc secret vào đó. Xem [trang giá của AI Studio](https://aistudio.google.com/docs/pricing) để biết model và giới hạn hiện tại. |
 
-**Điều này có nghĩa gì trong thực tế:** demo trực tiếp dùng GitHub Copilot trong VS Code, với agent mode. Hãy chọn gói Student hoặc Pro nếu bạn muốn làm theo mọi bước thực hành. Google AI Plus không có agent coding chạy trên project của bạn, nên bạn có thể theo các khái niệm và hỏi trong chat, nhưng không làm lại được các bước thực hành. Hãy hỏi ban tổ chức xem họ mong đợi bạn dùng lựa chọn nào.
+**Điều này có nghĩa gì trong thực tế:** demo trực tiếp dùng GitHub Copilot trong VS Code, với agent mode. Hãy chọn gói Student hoặc Pro nếu bạn muốn làm theo mọi bước thực hành. Google AI Plus không có agent coding chạy trên project của bạn. Gói Free của Google AI Studio cho bạn dùng model Gemini để thử nghiệm trên trình duyệt, nhưng các bước demo không dùng nó. Với cả hai lựa chọn Google, bạn có thể theo các khái niệm và hỏi trong chat, nhưng không làm lại được các bước thực hành. Hãy hỏi ban tổ chức xem họ mong đợi bạn dùng lựa chọn nào.
 
 Sinh viên xác minh trạng thái với GitHub có thể đăng ký gói Copilot Student. Thông tin gói có thể thay đổi, vì vậy hãy đọc điều khoản hiện tại trước khi đăng ký.
 
@@ -97,7 +98,7 @@ Trong VS Code, hãy xác nhận rằng:
 
 ## Trước buổi học
 
-- [ ] Chọn tài khoản AI (GitHub Copilot hoặc Google AI Plus) và xác nhận bạn đăng nhập được.
+- [ ] Chọn tài khoản AI (GitHub Copilot, Google AI Plus hoặc Google AI Studio) và xác nhận bạn đăng nhập được.
 - [ ] Cài Git và VS Code, rồi đăng nhập GitHub Copilot.
 - [ ] Cài công cụ cho tech stack bạn đã chọn.
 - [ ] Đọc mục 1 đến 7 của tài liệu này (mục 6 là tùy chọn).

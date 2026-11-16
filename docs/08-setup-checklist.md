@@ -12,8 +12,9 @@ You need one of the following to take part in the hands-on demo:
 | --- | --- | --- | --- |
 | **GitHub Copilot** (recommended) | Student plan (free for verified students) or Pro. The Free plan also exists. | **Yes** with the Student or Pro plan. Copilot Chat and agent mode run inside VS Code. The Free plan has limited agent access and only automatic model selection, so it may not cover the whole demo. | Plans and limits change. Check the [current plans](https://github.com/features/copilot/plans) and the [plan comparison](https://docs.github.com/en/copilot/get-started/plans). The Student plan excludes third-party agents. |
 | **Google AI Plus** | Paid subscription; price and availability depend on your country | **No,** not for the coding workflow. The plan covers the Gemini app, chat and Google apps. Google Antigravity, Google's agent development platform, is listed for AI Pro and AI Ultra, not AI Plus. | Check [Google's subscription page](https://gemini.google/subscriptions) for your country. You can still use Gemini chat to learn concepts. |
+| **Google AI Studio** (Gemini API) | Free tier with limited access; some models are free of charge. Paid plans use pay-as-you-go rates. | **Not covered by the demo.** AI Studio is a web app and API that uses an API key. It does not provide the Copilot agent mode used in VS Code. Using Gemini inside VS Code needs a third-party tool that this guide does not cover. | Google may use free-tier content to improve its products, so never paste private code or secrets. Check the [AI Studio pricing page](https://aistudio.google.com/docs/pricing) for current models and limits. |
 
-**What this means in practice:** the live demo uses GitHub Copilot in VS Code, with agent mode. Choose the Student or Pro plan if you want to follow every hands-on step. Google AI Plus does not include a coding agent for your project, so you can follow the concepts and ask questions in chat, but you will not be able to repeat the hands-on steps. Ask the organizers which option they expect you to use.
+**What this means in practice:** the live demo uses GitHub Copilot in VS Code, with agent mode. Choose the Student or Pro plan if you want to follow every hands-on step. Google AI Plus does not include a coding agent for your project. Google AI Studio's free tier gives you Gemini models for experiments in the browser, but the demo steps do not use it. With either Google option, you can follow the concepts and ask questions in chat, but you will not be able to repeat the hands-on steps. Ask the organizers which option they expect you to use.
 
 Students who verify their status with GitHub can apply for the Copilot Student plan. Plan details can change, so read the current terms before you sign up.
 
@@ -97,7 +98,7 @@ In VS Code, confirm that:
 
 ## Before the session
 
-- [ ] Choose an AI account (GitHub Copilot or Google AI Plus) and confirm you can sign in.
+- [ ] Choose an AI account (GitHub Copilot, Google AI Plus or Google AI Studio) and confirm you can sign in.
 - [ ] Install Git and VS Code, and sign in to GitHub Copilot.
 - [ ] Install the tools for your chosen stack.
 - [ ] Read sections 1 to 7 of this guide (section 6 is optional).
