@@ -51,6 +51,10 @@ An agent does not remove your responsibility. Before you accept a change, you sh
 
 Capabilities depend on the product, its settings and the permissions you grant. Check the current documentation for the tool you use.
 
+## Building with AI is not the same as AI inside the app
+
+**AI-driven development** means you use AI to help build software: to clarify requirements, plan, write and check code. The app you build does not have to contain AI. A to-do app built with an AI assistant is one example. If the app also has a chatbot or another AI feature, that feature is part of the product. The two can go together, but neither requires the other.
+
 ## In the workshop
 
 The demo uses **GitHub Copilot** in VS Code, including Copilot Chat and agent mode, together with **GitHub Spec Kit**. Spec Kit adds a structured workflow of specifications, plans and tasks. The thinking behind the workflow is not tied to one tool.

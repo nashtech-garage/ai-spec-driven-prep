@@ -36,6 +36,7 @@
 
 - [GitHub Spec Kit](https://github.com/github/spec-kit): README và documentation.
 - [Spec Kit quickstart](https://github.github.io/spec-kit/quickstart.html): setup và bước đầu.
+- [Spec Kit: agentic SDD reference](https://github.com/github/spec-kit/blob/main/docs/reference/agentic-sdd.md): danh sách lệnh và việc mỗi quality gate kiểm tra.
 
 ## Mobile development tools
 

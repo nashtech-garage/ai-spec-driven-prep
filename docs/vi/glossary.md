@@ -9,11 +9,14 @@
 | **AI (Artificial Intelligence)** | Lĩnh vực xây hệ thống làm việc thường cần phán đoán của người. |
 | **AI observability** | Giám sát những gì AI feature đã làm: prompt, tài liệu truy xuất, tool calls, output, số token và độ trễ, thường ghi thành traces. |
 | **Agent mode** | Mode AI assistant lập plan và làm nhiều bước trong permissions được cấp. |
+| **Bounded first change** | Thay đổi đầu tiên nhỏ, giới hạn rõ ràng trên project đã có, kèm ví dụ nghiệm thu cụ thể. Dùng để thử workflow trước khi làm việc lớn hơn. |
+| **Brownfield** | Project đã có code đang chạy và phải giữ được, khác với project mới (greenfield). |
 | **Chunk** | Một đoạn của tài liệu (thường vài đoạn văn), được embed và lưu để truy xuất. |
 | **Coding agent** | AI làm nhiều bước trong project bằng tools. |
 | **Context** | Mọi thứ model nhận cho request. |
 | **Context engineering** | Quyết định đưa gì vào context của model (instructions, file, text truy xuất, kết quả tool) và khi nào đưa. |
 | **Context window** | Giới hạn text (token) model xử lý trong request. |
+| **Converge** | Bước sau implementation, so sánh code với spec, plan và tasks, rồi thêm việc còn thiếu vào `tasks.md`. Không sửa code. |
 | **Deep learning** | Machine learning dùng neural networks nhiều lớp. |
 | **Embedding** | Danh sách số biểu diễn ý nghĩa của text; text có ý nghĩa giống nhau sẽ có vector gần nhau. |
 | **Eval** | Bài kiểm tra lặp lại được cho hành vi AI, gồm tập đầu vào với kết quả mong đợi hoặc rubric chấm điểm. |
@@ -42,6 +45,7 @@
 | **Predictive AI** | AI cho phán đoán, nhãn hoặc số về data hiện có. |
 | **Prompt** | Request hoặc thông tin gửi cho model. |
 | **Prompt injection** | Tấn công trong đó văn bản nằm trong dữ liệu (web page, email, issue) cố ghi đè chỉ dẫn của AI. |
+| **Quality gate** | Kiểm tra tùy chọn trước implementation, như clarify, checklist hoặc analyze, để bắt requirements chưa rõ hoặc mâu thuẫn. |
 | **RAG (Retrieval-Augmented Generation)** | Tìm tài liệu liên quan tại thời điểm hỏi và thêm vào prompt, để model trả lời dựa trên chúng. |
 | **Reasoning model** | Model được train để dành thêm token suy nghĩ trước khi trả lời. Thường tốt hơn với bài nhiều bước nhưng chậm và tốn hơn. |
 | **Responsible AI** | Thực hành về quyền riêng tư, công bằng, minh bạch, an toàn và bản quyền khi đưa AI vào sản phẩm. |

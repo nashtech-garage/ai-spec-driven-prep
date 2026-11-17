@@ -36,6 +36,7 @@ Optional reading. Check each page for the latest information, because products a
 
 - [GitHub Spec Kit](https://github.com/github/spec-kit): project README and documentation for the spec-driven workflow.
 - [Spec Kit quickstart](https://github.github.io/spec-kit/quickstart.html): setup and first steps.
+- [Spec Kit: agentic SDD reference](https://github.com/github/spec-kit/blob/main/docs/reference/agentic-sdd.md): the command list and what each quality gate checks.
 
 ## Mobile development tools
 

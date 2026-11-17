@@ -9,11 +9,14 @@
 | **AI (Artificial Intelligence)** | The field of building systems that perform tasks that normally need human judgment. |
 | **AI observability** | Monitoring of what an AI feature did: prompts, retrieved documents, tool calls, outputs, token use and latency, usually recorded as traces. |
 | **Agent mode** | A mode in which an AI assistant plans and performs several steps, such as reading files and editing code, within the permissions you grant. |
+| **Bounded first change** | A small, clearly limited first change to an existing project, with concrete acceptance examples. Use it to test the workflow before larger work. |
+| **Brownfield** | An existing project that already has working code you must keep working, as opposed to a new (greenfield) project. |
 | **Chunk** | A piece of a document, usually a few paragraphs, that is embedded and stored for retrieval. |
 | **Coding agent** | An AI system that works through several steps in a project, using tools such as reading files, editing code or running commands. |
 | **Context** | Everything a model receives for a request, such as the prompt, earlier messages and any files the tool sends. |
 | **Context engineering** | Deciding what goes into a model's context (instructions, files, retrieved text, tool results) and when. |
 | **Context window** | The limit on how much text (in tokens) a model can handle in one request. |
+| **Converge** | The step after implementation that compares the code with the spec, plan and tasks, and adds any remaining work to `tasks.md`. It does not edit code. |
 | **Deep learning** | Machine learning that uses neural networks with many layers. |
 | **Embedding** | A list of numbers that represents the meaning of a text. Texts with similar meanings get nearby vectors. |
 | **Eval** | A repeatable test of AI behavior, using a set of inputs with expected results or a scoring rubric. |
@@ -42,6 +45,7 @@
 | **Predictive AI** | AI that outputs a judgment, label or number about existing data. |
 | **Prompt** | The request or information sent to a model. |
 | **Prompt injection** | An attack in which text inside data (a web page, email or issue) tries to override the AI's instructions. |
+| **Quality gate** | An optional check before implementation, such as clarify, checklist or analyze, that catches unclear or inconsistent requirements. |
 | **RAG (Retrieval-Augmented Generation)** | Retrieving relevant documents at question time and adding them to the prompt, so the model answers from them. |
 | **Reasoning model** | A model trained to spend extra tokens reasoning before it answers. Often better on multi-step problems, but slower and more costly. |
 | **Responsible AI** | Practices for privacy, fairness, transparency, safety and licensing when AI is used in a product. |

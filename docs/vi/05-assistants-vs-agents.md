@@ -43,6 +43,10 @@ Mỗi “act” là tool call. Permissions quyết định agent được làm g
 
 Khả năng phụ thuộc product, settings và permissions.
 
+## Xây app bằng AI khác với AI trong app
+
+**AI-driven development** nghĩa là dùng AI để giúp xây phần mềm: làm rõ requirements, lập plan, viết và kiểm tra code. App bạn xây không nhất thiết phải có AI. Ví dụ một app to-do được xây bằng AI assistant là một trường hợp. Nếu app có chatbot hoặc tính năng AI khác, thì tính năng đó là một phần của sản phẩm. Hai thứ có thể đi cùng nhau, nhưng cái này không bắt buộc cái kia.
+
 ## Trong workshop
 
 Demo dùng **GitHub Copilot** trong VS Code, gồm Copilot Chat và agent mode, cùng **GitHub Spec Kit**. Spec Kit bổ sung workflow có specifications, plans và tasks.
