@@ -122,7 +122,8 @@ export default withMermaid({
     search: { provider: "local" },
     socialLinks: [],
     footer: {
-      message: "Workshop preparation document · Nashtech 2026",
+      message: "Workshop preparation document",
+      copyright: "NashTech - 2026",
     },
   },
 });
