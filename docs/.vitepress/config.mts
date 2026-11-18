@@ -122,8 +122,7 @@ export default withMermaid({
     search: { provider: "local" },
     socialLinks: [],
     footer: {
-      message: "Prepared for workshop participants. Verify tool versions and product features before use.",
-      copyright: "Workshop preparation guide",
+      message: "Workshop preparation document · Nashtech 2026",
     },
   },
 });
