@@ -1,8 +1,12 @@
 # 7. Spec-Driven Development
 
-**Estimated reading time:** 7 minutes
+**Estimated reading time:** 9 minutes
+
+**Spec-driven development (SDD)** is a way of building software in which a written specification comes first and guides the plan, the tasks, the code and the checks. It is a method, not a product. It does not depend on one AI tool, one model or one technology stack.
 
 A **specification (spec)** describes what to build: who needs it, what is in scope, what is out of scope and how you will know it works. A spec gives people and AI tools one reviewable document to agree on. It does not replace conversations with users or testing.
+
+Later in this chapter you will meet **Spec Kit**, an open-source toolkit that implements SDD. SDD and Spec Kit are not the same thing.
 
 ## Why write a spec before code?
 
@@ -35,32 +39,9 @@ flowchart LR
 | Verify | Does it meet the spec, and was it checked? | Test results and review notes |
 | Converge | What do the artifacts describe that the code still lacks? | Remaining work added to `tasks.md` |
 
+These steps describe the SDD method. Each tool names and splits them differently. Spec Kit's commands are covered later in this chapter.
+
 You review each artifact before moving to the next step. Problems are cheaper to fix in a document than after code has been written.
-
-## The Spec Kit commands
-
-The demo uses GitHub Spec Kit. It turns the workflow above into slash commands for your AI coding agent. The Spec Kit docs write commands as `/speckit.specify`. GitHub Copilot's default skills mode uses `/speckit-specify`, so use the form that Copilot Chat accepts.
-
-| Step | Command | Role | What it does |
-| --- | --- | --- | --- |
-| Principles | `/speckit-constitution` | Core | Creates or updates the project principles that every later step follows. |
-| Specify | `/speckit-specify` | Core | Creates requirements and user stories from your description. |
-| Clarify | `/speckit-clarify` | Optional gate | Asks up to five focused questions about unclear points before planning. |
-| Plan | `/speckit-plan` | Core | Writes the technical implementation plan. |
-| Checklist | `/speckit-checklist` | Optional gate | Generates checklists that test the quality of the requirements. |
-| Tasks | `/speckit-tasks` | Core | Breaks the plan into actionable tasks. |
-| Analyze | `/speckit-analyze` | Optional gate | Compares spec, plan and tasks, then reports conflicts and gaps. It does not edit files. |
-| Implement | `/speckit-implement` | Core | Carries out the tasks. |
-| Converge | `/speckit-converge` | Core | After implementation, compares the code with the artifacts and adds remaining work to `tasks.md`. |
-
-### Quality gates: checklist and analyze
-
-- **Checklist:** a checklist for requirements. Spec Kit calls it "unit tests for your requirements". It checks whether the spec is clear and complete, not whether the code runs. You review it yourself and mark an item `[x]` only after you accept it. `/speckit-implement` reads these checkboxes and asks you before it continues if any item is still unchecked. It never ticks them for you.
-- **Analyze:** a read-only check before implementation. It looks for problems such as a task with no matching requirement, or a plan choice that contradicts the spec. Fix each problem in the step that owns it, then run analyze again.
-
-### Converge: check the result
-
-After implementation, `/speckit-converge` compares the code with the spec, plan and tasks. It may only add remaining work to `tasks.md`; it does not edit or delete code. Converge asks "did we build everything the artifacts describe?" Tests ask "does the behavior work?" You need both.
 
 ## Anatomy of a good spec
 
@@ -99,16 +80,72 @@ Quality requirement (for example, accessibility):
 Open questions:
 ```
 
-## Working in an existing project
-
-Most real work happens in a project that already exists. Spec Kit can be added to one with `specify init --here`, which sets it up in the current folder; for example, `specify init --here --integration copilot`. Check the Spec Kit docs for the current options. For the first run, choose a **bounded first change**: one small change with a clear boundary and clear acceptance examples. Spec Kit also has optional extensions for bug fixing and for assessing an idea before you write a spec. They are not part of the core workflow.
-
 ## Spec-driven development is not tied to one stack
 
 The workshop demo uses Expo and React Native, but the method works with any mobile stack. Your user outcome and acceptance criteria stay the same. Your technical plan, tools, build steps and tests must match your stack. For example, a Flutter or native Android project needs its own plan and its own test commands.
 
+## Spec Kit: one implementation of SDD
+
+[Spec Kit](https://github.com/github/spec-kit) is an open-source toolkit from GitHub. It gives an AI coding agent structured commands, templates and quality gates that follow the SDD workflow. For current commands and options, see the [Spec Kit documentation](https://github.github.io/spec-kit/).
+
+```mermaid
+flowchart TB
+    SDD["SDD: the method"] --> SK["Spec Kit: one toolkit that implements it"]
+    SK --> AG["Your AI coding agent, such as Copilot or Claude"]
+    AG --> APP["Your app, plan and tests"]
+```
+
+Three points prevent confusion:
+
+- **SDD is the method.** You can practise it with a plain Markdown file and any chat assistant.
+- **Spec Kit is one tool for the method.** It works with many coding agents, including GitHub Copilot, which this workshop uses. Other tools can implement SDD too.
+- **Spec Kit is not only SDD.** It also has optional processes for bug fixing and idea assessment. They are separate from the core SDD workflow.
+
+### Minimal flow
+
+Create the constitution once per project, then repeat the other steps for each feature. Run these commands in your agent's chat, not in your terminal, one at a time, and review each result before you continue.
+
+```text
+/speckit-constitution Create principles focused on code quality, testing and maintainability.
+/speckit-specify <describe the feature>
+/speckit-plan <your technical choices>
+/speckit-tasks
+/speckit-implement
+/speckit-converge
+```
+
+### Commands
+
+The Spec Kit docs write commands as `/speckit.specify`. GitHub Copilot's default skills mode uses `/speckit-specify`, so use the form that Copilot Chat accepts.
+
+| Step | Command | Role | What it does |
+| --- | --- | --- | --- |
+| Principles | `/speckit-constitution` | Core | Creates or updates the project principles that every later step follows. |
+| Specify | `/speckit-specify` | Core | Creates requirements and user stories from your description. |
+| Clarify | `/speckit-clarify` | Optional gate | Asks up to five focused questions about unclear points before planning. |
+| Plan | `/speckit-plan` | Core | Writes the technical implementation plan. |
+| Checklist | `/speckit-checklist` | Optional gate | Generates checklists that test the quality of the requirements. |
+| Tasks | `/speckit-tasks` | Core | Breaks the plan into actionable tasks. |
+| Analyze | `/speckit-analyze` | Optional gate | Compares spec, plan and tasks, then reports conflicts and gaps. It does not edit files. |
+| Implement | `/speckit-implement` | Core | Carries out the tasks. |
+| Converge | `/speckit-converge` | Core | After implementation, compares the code with the artifacts and adds remaining work to `tasks.md`. |
+
+### Quality gates: checklist and analyze
+
+- **Checklist:** a checklist for requirements. Spec Kit calls it "unit tests for your requirements". It checks whether the spec is clear and complete, not whether the code runs. You review it yourself and mark an item `[x]` only after you accept it. `/speckit-implement` reads these checkboxes and asks you before it continues if any item is still unchecked. It never ticks them for you.
+- **Analyze:** a read-only check before implementation. It looks for problems such as a task with no matching requirement, or a plan choice that contradicts the spec. Fix each problem in the step that owns it, then run analyze again.
+
+### Converge: check the result
+
+After implementation, `/speckit-converge` compares the code with the spec, plan and tasks. It may only add remaining work to `tasks.md`; it does not edit or delete code. Converge asks "did we build everything the artifacts describe?" Tests ask "does the behavior work?" You need both.
+
+### Add Spec Kit to an existing project
+
+Most real work happens in a project that already exists. Spec Kit can be added to one with `specify init --here`, which sets it up in the current folder; for example, `specify init --here --integration copilot`. Check the Spec Kit docs for the current options. For the first run, choose a **bounded first change**: one small change with a clear boundary and clear acceptance examples.
+
 ## Key takeaways
 
+- Keep the method and the tool apart: SDD is the approach, and Spec Kit is one toolkit for it.
 - Write what and why before how.
 - Make acceptance examples specific enough to check.
 - Name non-goals so the AI does not invent extra features.
