@@ -59,12 +59,3 @@ After reading the guide you should be able to:
 You can complete the reading and exercises without an AI account. If you have one, you may try the prompts yourself, but always check the results.
 :::
 
-## Workshop at a glance
-
-| Part | Topic |
-| --- | --- |
-| Before | Read this guide and complete the setup checklist |
-| 0 to 25 min | AI concepts, risks, specification and workflow |
-| 25 to 50 min | Live example: spec, plan, tasks, implementation and verification |
-| 50 to 82 min | Pair exercise: specify, build and verify a small change |
-| 82 to 90 min | Share results, takeaways and questions |

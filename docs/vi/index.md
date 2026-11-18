@@ -56,12 +56,3 @@ Bạn có thể đọc tài liệu này bằng **Tiếng Việt** (trang này) h
 Bạn có thể hoàn thành phần đọc và bài tập mà không cần tài khoản AI. Nếu có tài khoản, bạn có thể thử các prompt, nhưng luôn kiểm tra kết quả.
 :::
 
-## Tổng quan buổi workshop
-
-| Thời gian | Nội dung |
-| --- | --- |
-| Trước buổi học | Đọc tài liệu này và làm danh sách chuẩn bị |
-| 0 đến 25 phút | Khái niệm AI, rủi ro, specification và quy trình |
-| 25 đến 50 phút | Ví dụ trực tiếp: spec, plan, tasks, implementation và verification |
-| 50 đến 82 phút | Bài tập theo cặp: đặc tả, xây dựng và kiểm chứng một thay đổi nhỏ |
-| 82 đến 90 phút | Chia sẻ kết quả, điểm chính và câu hỏi |

@@ -1,5 +1,18 @@
 # Bảng thuật ngữ
 
+## Bốn thực hành nên tìm hiểu thêm
+
+Bốn thuật ngữ này mô tả các lớp bao quanh model AI, từ một chỉ dẫn đơn lẻ đến một hệ thống lặp lại. Mỗi lớp xây dựng trên lớp trước, nên thuật ngữ sau không thay thế thuật ngữ trước. Dùng từ khóa tìm kiếm để đọc thêm.
+
+| Thuật ngữ | Tập trung vào | Từ khóa tìm kiếm |
+| --- | --- | --- |
+| **Prompt engineering** | Viết chỉ dẫn rõ ràng, cụ thể (kèm định dạng hoặc ví dụ) cho một lần tương tác. | `prompt engineering guide` |
+| **Context engineering** | Quyết định model nhìn thấy thông tin gì, và khi nào. | `context engineering AI agents` |
+| **Harness engineering** | Xây môi trường quanh agent (test, tài liệu, quy tắc, tiêu chí hoàn thành) để kết quả của nó kiểm chứng được. | `harness engineering AI agents` |
+| **Loop engineering** | Thiết kế một vòng lặp lặp lại, trong đó agent lập plan, hành động, kiểm tra kết quả và tiếp tục hướng tới mục tiêu, với ít sự can thiệp của người. | `loop engineering AI agents` |
+
+## Tất cả thuật ngữ
+
 | Thuật ngữ | Ý nghĩa |
 | --- | --- |
 | **Acceptance criteria** | Ví dụ hoặc điều kiện cho thấy feature đáp ứng requirements. |
@@ -31,6 +44,7 @@
 | **Latency (độ trễ)** | Thời gian người dùng phải chờ phản hồi. Stream câu trả lời khi đang viết giúp cảm giác nhanh hơn. |
 | **LLM (Large Language Model)** | Generative model train trên lượng text lớn, dùng cho chat/coding. |
 | **LLM-as-a-judge** | Dùng một model để chấm output của model khác theo rubric. Hữu ích, nhưng cần kiểm tra lại ngẫu nhiên điểm số. |
+| **Loop engineering** | Thiết kế vòng lặp lặp lại, trong đó agent lập plan, hành động, kiểm tra kết quả và tiếp tục hướng tới mục tiêu. Cần giới hạn chi phí và tránh đi lệch hướng. |
 | **Machine learning (ML)** | Xây AI bằng cách học patterns từ data. |
 | **MCP (Model Context Protocol)** | Chuẩn mở để kết nối ứng dụng AI với tools và data bên ngoài thông qua MCP servers. |
 | **Model** | Hàm toán học có parameters điều chỉnh được. |
@@ -44,6 +58,7 @@
 | **Pre-training** | Giai đoạn đầu học patterns từ data rất lớn. |
 | **Predictive AI** | AI cho phán đoán, nhãn hoặc số về data hiện có. |
 | **Prompt** | Request hoặc thông tin gửi cho model. |
+| **Prompt engineering** | Viết chỉ dẫn rõ ràng, cụ thể cho model, kèm quy tắc định dạng hoặc ví dụ, để có một phản hồi tốt hơn. |
 | **Prompt injection** | Tấn công trong đó văn bản nằm trong dữ liệu (web page, email, issue) cố ghi đè chỉ dẫn của AI. |
 | **Quality gate** | Kiểm tra tùy chọn trước implementation, như clarify, checklist hoặc analyze, để bắt requirements chưa rõ hoặc mâu thuẫn. |
 | **RAG (Retrieval-Augmented Generation)** | Tìm tài liệu liên quan tại thời điểm hỏi và thêm vào prompt, để model trả lời dựa trên chúng. |

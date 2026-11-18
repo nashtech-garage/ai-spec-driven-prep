@@ -1,5 +1,18 @@
 # Glossary
 
+## Four practices to search for
+
+These four terms describe layers around an AI model, from the single instruction to a repeating system. Each layer builds on the one before it, so a later term does not replace an earlier one. Use the search keyword to find more reading.
+
+| Term | What it focuses on | Search keyword |
+| --- | --- | --- |
+| **Prompt engineering** | Writing a clear, specific instruction (with format or examples) for one interaction. | `prompt engineering guide` |
+| **Context engineering** | Choosing what information the model sees, and when. | `context engineering AI agents` |
+| **Harness engineering** | Building the environment around an agent (tests, docs, rules, done criteria) so its work can be checked. | `harness engineering AI agents` |
+| **Loop engineering** | Designing a repeating cycle that prompts, checks and continues an agent's work toward a goal, with little human input. | `loop engineering AI agents` |
+
+## All terms
+
 | Term | Meaning |
 | --- | --- |
 | **Acceptance criteria** | Concrete examples or conditions that show a feature meets its requirements. |
@@ -31,6 +44,7 @@
 | **Latency** | How long a user waits for a response. Streaming the answer as it is written makes it feel faster. |
 | **LLM (Large Language Model)** | A generative model trained on large amounts of text, used for chat and coding assistants. |
 | **LLM-as-a-judge** | Using one model to score another model's output against a rubric. Useful, but spot-check its scores. |
+| **Loop engineering** | Designing a repeating cycle in which an agent plans, acts, checks its result and continues toward a goal. Needs limits on cost and drift. |
 | **Machine learning (ML)** | A way of building AI systems by learning patterns from data instead of writing every rule. |
 | **MCP (Model Context Protocol)** | An open standard for connecting AI applications to external tools and data through MCP servers. |
 | **Model** | A mathematical function with adjustable parameters, produced by training. |
@@ -44,6 +58,7 @@
 | **Pre-training** | The first training stage, in which a model learns patterns from a very large amount of data. |
 | **Predictive AI** | AI that outputs a judgment, label or number about existing data. |
 | **Prompt** | The request or information sent to a model. |
+| **Prompt engineering** | Writing a clear, specific instruction for a model, with format rules or examples, to get a better single response. |
 | **Prompt injection** | An attack in which text inside data (a web page, email or issue) tries to override the AI's instructions. |
 | **Quality gate** | An optional check before implementation, such as clarify, checklist or analyze, that catches unclear or inconsistent requirements. |
 | **RAG (Retrieval-Augmented Generation)** | Retrieving relevant documents at question time and adding them to the prompt, so the model answers from them. |

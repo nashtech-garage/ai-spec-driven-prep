@@ -1,0 +1,62 @@
+.mmd-zoom-btn {
+  display: block;
+  margin: 0.5rem 0 0 auto;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-2);
+  font-size: 0.8rem;
+  cursor: zoom-in;
+  opacity: 0.8;
+}
+
+.mmd-zoom-btn:hover {
+  opacity: 1;
+  color: var(--vp-c-brand-1);
+}
+
+.mmd-zoom-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.mmd-zoom-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--vp-c-bg);
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.mmd-zoom-toolbar button {
+  min-width: 2.25rem;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.mmd-zoom-toolbar button:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.mmd-zoom-stage {
+  flex: 1;
+  overflow: auto;
+  padding: 1rem;
+  background: var(--vp-c-bg);
+}
+
+.mmd-zoom-stage svg {
+  display: block;
+  margin: 0 auto;
+}
